@@ -1,0 +1,4 @@
+# Copia a .dev.vars solo para desarrollo. Nunca lo subas a Git.
+WORKER_TOKEN=reemplaza-con-un-secreto-largo
+SENDGRID_API_KEY=reemplaza-con-tu-clave-sendgrid
+FROM_EMAIL=remitente-verificado@example.com

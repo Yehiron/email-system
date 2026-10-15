@@ -1,0 +1,7 @@
+{
+  "name": "learning-email-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-14",
+  "workers_dev": true,
+  "account_id": "2d4a786ea55d33af26ca12dd96860a99"
+}

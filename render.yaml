@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: email-lab-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+      - key: JAVA_TOOL_OPTIONS
+        value: -XX:MaxRAMPercentage=60.0 -XX:+UseSerialGC
+      - key: APP_USERNAME
+        value: alumno
+      - key: APP_PASSWORD
+        generateValue: true
+      - key: FRONTEND_ORIGIN
+        value: https://email-lab-wg19.netlify.app
+      - key: WORKER_URL
+        value: https://learning-email-worker.yeiron12.workers.dev/api/send-email
+      - key: WORKER_TOKEN
+        sync: false

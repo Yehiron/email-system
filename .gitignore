@@ -1,0 +1,17 @@
+**/node_modules/
+**/target/
+**/dist/
+**/.angular/
+**/.wrangler/
+**/.dev.vars
+**/.env
+.DS_Store
+
+**/.wrangler-config/
+**/.env.*
+!**/.env.example
+**/secrets*.json
+*.pem
+*.key
+
+.netlify/
